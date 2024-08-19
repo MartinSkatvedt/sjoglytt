@@ -7,15 +7,17 @@ export const amandine = localFont({
       style: "normal",
       weight: "400",
     },
+  ],
+  variable: "--font-amandine",
+});
+
+export const fenwick = localFont({
+  src: [
     {
-      path: "./amandine/Amandine_Bold.otf",
+      path: "./fenwick/Fenwick.ttf",
       style: "normal",
-      weight: "700",
-    },
-    {
-      path: "./amandine/Amandine_Light.otf",
-      style: "normal",
-      weight: "200",
+      weight: "400",
     },
   ],
+  variable: "--font-fenwick",
 });

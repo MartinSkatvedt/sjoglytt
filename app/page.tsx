@@ -9,7 +9,7 @@ import SectionWithText from "./components/sectionWithText";
 const Home = () => {
   return (
     <main className="flex flex-col w-full">
-      <SectionContainer className="relative w-full mb-[5vh] min-h-[95vh]">
+      <SectionContainer className="relative w-full">
         <Image
           src="/images/hero.png"
           alt="Picture of view of the sea"
@@ -43,6 +43,7 @@ const Home = () => {
         imAlt="Picture of the cabin from the sea"
         imHeight={437}
         imWidth={597}
+        imgClassName="sm:p-[10vh]"
       />
 
       <SectionContainer className="bg-[#D3E1E5] flex gap-8 py-4 sm:py-24 px-2 sm:px-20 flex-col sm:flex-row">

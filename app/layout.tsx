@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { amandine } from "./fonts/fonts";
+import { amandine, fenwick } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Sjøglytt",
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={amandine.className} lang="en">
+    <html className={`${amandine.variable} ${fenwick.variable}`} lang="en">
       <body>{children}</body>
     </html>
   );

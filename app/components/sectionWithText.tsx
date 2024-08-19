@@ -10,16 +10,24 @@ type SectionWithTextProps = {
   title: string;
   text: ReactNode | string;
 
-  isImLeft?: boolean;
   imSrc: string;
   imAlt: string;
   imHeight: number;
   imWidth: number;
+  imgClassName?: string;
 };
 
 const SectionWithText = (props: SectionWithTextProps) => {
-  const { className, title, text, imSrc, imAlt, imHeight, imWidth, isImLeft } =
-    props;
+  const {
+    className,
+    title,
+    text,
+    imSrc,
+    imAlt,
+    imHeight,
+    imWidth,
+    imgClassName,
+  } = props;
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
@@ -37,13 +45,13 @@ const SectionWithText = (props: SectionWithTextProps) => {
         )}
         ref={ref}
       >
-        <h2 className="font-normal text-6xl">{title}</h2>
+        <h2 className="font-medium text-6xl">{title}</h2>
         <p className="w-full sm:w-[70%] xl:w-[50%] mx-auto font-normal text-xl px-4">
           {text}
         </p>
       </div>
 
-      <div className="w-3/5">
+      <div className={cn("w-3/5", imgClassName)}>
         <Image
           src={imSrc}
           alt={imAlt}
