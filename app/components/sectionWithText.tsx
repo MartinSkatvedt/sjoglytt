@@ -45,7 +45,7 @@ const SectionWithText = (props: SectionWithTextProps) => {
         )}
         ref={ref}
       >
-        <h2 className="font-medium text-6xl">{title}</h2>
+        <h2 className="text-6xl">{title}</h2>
         <p className="w-full sm:w-[70%] xl:w-[50%] mx-auto font-normal text-xl px-4">
           {text}
         </p>

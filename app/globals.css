@@ -15,12 +15,11 @@ body {
   font-family: var(--font-amandine);
 }
 
-p {
-  font-family: var(--font-fenwick);
+h2 {
+  font-family: var(--font-amandine);
+  font-weight: 600;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p {
+  font-family: fenwick, sans-serif;
+  font-weight: 400;
 }
