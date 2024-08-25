@@ -35,10 +35,14 @@ const Home = () => {
 
       <SectionWithText
         title="Velkommen!"
-        text="Rorbuen ligger på Moster i Bømlo kommune, og har en størrelse på 110
+        text={
+          <p>
+            Rorbuen ligger på Moster i Bømlo kommune, og har en størrelse på 110
             kvm fordelt på to etasjer. I tillegg har den en hems på 13 kvm.
             Flott uteområde på bakkeplan, samt en terrasse på ca 12 kvm i 2.
-            etasje."
+            etasje.
+          </p>
+        }
         imSrc="/images/velkommen.png"
         imAlt="Picture of the cabin from the sea"
         imHeight={437}
@@ -80,7 +84,14 @@ const Home = () => {
       <SectionWithText
         className="sm:flex-row-reverse"
         title="Innhold"
-        text="Første etasje inneholder entré, 2 soverom, 1 bad og stue + kjøkken. Andre etasje inneholder 1 soverom, 1 bad + stue og kjøkken. Rorbuen er fullt møblert, godt utstyrt og har en høy standard. Den har elbil-lader og 3 parkeringsplasser."
+        text={
+          <p>
+            Første etasje inneholder entré, 2 soverom, 1 bad og stue + kjøkken.
+            Andre etasje inneholder 1 soverom, 1 bad + stue og kjøkken. Rorbuen
+            er fullt møblert, godt utstyrt og har en høy standard. Den har
+            elbil-lader og 3 parkeringsplasser.
+          </p>
+        }
         imSrc="/images/innhold.png"
         imAlt="Picture of the cabin"
         imHeight={814}
@@ -91,10 +102,22 @@ const Home = () => {
         className="bg-[#E1E5D3]"
         title="Booking"
         text={
-          <>
-            Ved booking eller andre spørsmål, kontakt Åse Jensen på tlf{" "}
-            <a href="tel:+4790038174">900 36 174</a>.
-          </>
+          <div className="text-left">
+            <p>Ved booking eller andre spørsmål, kontakt:</p>
+            <p>Åse Jensen</p>
+            <p>
+              Mobil:{" "}
+              <a href="tel:+4790038174" className="underline">
+                900 36 174
+              </a>
+            </p>
+            <p>
+              E-post:{" "}
+              <a href="mailto:sjoglytt@gmail.com" className="underline">
+                sjoglytt@gmail.com
+              </a>
+            </p>
+          </div>
         }
         imSrc="/images/booking.png"
         imAlt="Picture of view of the pier"

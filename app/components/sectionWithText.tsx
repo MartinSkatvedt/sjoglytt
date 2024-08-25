@@ -46,9 +46,9 @@ const SectionWithText = (props: SectionWithTextProps) => {
         ref={ref}
       >
         <h2 className="text-6xl">{title}</h2>
-        <p className="w-full sm:w-[70%] xl:w-[50%] mx-auto font-normal text-xl px-4">
+        <div className="w-full sm:w-[75%] xl:w-[50%] mx-auto font-normal text-xl px-4 text-left">
           {text}
-        </p>
+        </div>
       </div>
 
       <div className={cn("w-3/5", imgClassName)}>
