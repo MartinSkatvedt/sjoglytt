@@ -85,12 +85,14 @@ const Home = () => {
         className="sm:flex-row-reverse"
         title="Innhold"
         text={
-          <p>
-            Første etasje inneholder entré, 2 soverom, 1 bad og stue + kjøkken.
-            Andre etasje inneholder 1 soverom, 1 bad + stue og kjøkken. Rorbuen
-            er fullt møblert, godt utstyrt og har en høy standard. Den har
-            elbil-lader og 3 parkeringsplasser.
-          </p>
+          <>
+            <p>
+              Første etasje inneholder entré, 2 soverom, 1 bad og stue +
+              kjøkken. Andre etasje inneholder 1 soverom, 1 bad + stue og
+              kjøkken. Rorbuen er fullt møblert, godt utstyrt og har en høy
+              standard. Den har elbil-lader og 3 parkeringsplasser.
+            </p>
+          </>
         }
         imSrc="/images/innhold.png"
         imAlt="Picture of the cabin"
@@ -117,6 +119,7 @@ const Home = () => {
                 sjoglytt@gmail.com
               </a>
             </p>
+            <p>Pris pr døgn: Fra kr 2500,- (langtidsleie etter avtale)</p>
           </div>
         }
         imSrc="/images/booking.png"
